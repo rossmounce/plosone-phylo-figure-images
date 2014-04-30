@@ -20,3 +20,7 @@ It does however have excellent metadata preservation. The metadata is not displa
 Here's the public Google+ album of the same PLOS ONE figure image content (156 figures):
 https://plus.google.com/photos/116987661329983363560/albums/6008121836436301377 
 
+* One minor advantage of Google+ over Flickr is that filenames are preserved when you re-download from Google+
+
+(Whilst Flickr preserves the embedded data when re-downloading, the filename of the new download is significantly different and unrelated to the original uploaded file filename
+
