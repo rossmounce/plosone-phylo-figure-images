@@ -1,0 +1,19 @@
+grep -r -l 'phylog*' | sort -u > wherearethetrees.txt
+cat wherearethetrees.txt | sed 's/^.............//g' | sed 's/pone/http:\/\/www\.plosone\.org\/article\/info:doi\/10\.1371\/journal\.pone/g' | sed 's/cap\./g00/g' | sed 's/g00[0-9][0-9]/g01/g' | sed '
+
+awk '{ if (length
+
+cat wherearethetrees.txt | sed 's/^.............//g' | sed 's/pone/http:\/\/www\.plosone\.org\/article\/info:doi\/10\.1371\/journal\.pone/g' | awk 'length == 74' > getpics.txt
+sed -i 's/cap\./g00/g' getpics.txt
+cat wherearethetrees.txt | sed 's/^.............//g' | sed 's/pone/http:\/\/www\.plosone\.org\/article\/info:doi\/10\.1371\/journal\.pone/g' | awk 'length == 75' | sed 's/cap\./g00/g' | cut -c 1-70,72-74 >> getpics.txt
+cp getpics.txt copygetpics.txt
+sed -i 's/$/\/largerimage/g' getpics.txt
+
+http://www.plosone.org/article/info:doi/10.1371/journal.pone.0000003.g001
+going to wget -O -w 30 pone.0000003.g001.tif 
+
+sed 's/http:\/\/www\.plosone\.org\/article\/info:doi\/10\.1371\/journal\.//g' copygetpics.txt | sed 's/$/.tif/g' | sed 's/^/wget -O -w 30 /g'
+
+paste -d ' ' firstpart.txt getpics.txt
+
+wget -w 30 -i get_pictures.txt
